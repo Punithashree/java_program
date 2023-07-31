@@ -1,0 +1,26 @@
+array Example
+
+
+package training;
+import java.util.Scanner;
+
+public class arr_example2 {
+	public static void main(String[] args) {
+		int n;
+		Scanner s=new Scanner(System.in);
+		n=s.nextInt();
+		int i;
+		int[] array=new int[n];
+		for(i=0;i<n;i++)
+			array[i]=s.nextInt();
+		int sum=0,mul=1;
+		for(int num:array) {
+			sum=sum+num;
+			mul=mul*num;
+		}
+		i=(sum%2==0)? sum:mul;
+		System.out.println(i);
+	    s.close();
+	}
+
+}
