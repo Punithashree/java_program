@@ -1,0 +1,33 @@
+Aamir Khan is suffering from short-term memory loss and he has forgotten how to add, subtract, multiply, modulo division and division. Write a program to help Aamir to perform the basic arithmetic operations.
+Input
+5
+2
+Output
+7
+3
+10
+
+1
+
+2
+
+package com.example.workout;
+
+import java.util.Scanner;
+
+public class arithmetic {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		System.out.println(a+b);
+		System.out.println(a-b);
+		System.out.println(a*b);
+		System.out.println(a/b);
+		System.out.println(a%b);
+		sc.close();
+		
+	}
+
+}
