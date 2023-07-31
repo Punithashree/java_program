@@ -1,0 +1,29 @@
+Write a program to left shift(signed) a value by 2.
+Input Format
+Input to get the integer n.
+Output Format
+Display the value after left shift.
+Constraints
+n (integer type).
+Sample Input
+20
+Sample Output
+80
+
+
+package com.example.workout;
+
+import java.util.Scanner;
+
+public class shiftvalue {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int left_shift= a<<2;
+		System.out.println(left_shift);
+		sc.close();
+
+	}
+
+}
