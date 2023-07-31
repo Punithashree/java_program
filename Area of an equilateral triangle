@@ -1,0 +1,35 @@
+Ragu's grandparents have their land in an equilateral triangle shape. They have to sow apple seeds for cultivation. Calculate the total area of the land so that they can buy the required amount of seeds. Round off the area to two decimal places.
+Input Format
+Input consists of a single integer value s that represents the side of an equilateral triangle.
+Output Format
+The output prints represent the area of an equilateral triangle.
+Round off the output to two decimal places.
+Sample Input 
+4
+Sample Output
+6.93
+Sample Input 
+18
+Sample Output
+140.30
+
+
+
+package com.example.workout;
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class area_equilateral_triangle {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		double a=sc.nextDouble();
+		double area=(Math.sqrt(3)/4)*a*a;
+		DecimalFormat d=new DecimalFormat("0.00");
+		System.out.println("Area: "+d.format(area));
+		sc.close();
+		
+
+	}
+
+}
