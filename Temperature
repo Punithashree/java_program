@@ -1,0 +1,65 @@
+Given an integer as an input, it represents the temperature in centigrade. Determine the
+Weather conditions based on the temperature.
+•	Temperature < 0 then print "Freezing weather".
+•	Temperature 0 - 10 then print "Very cold weather".
+•	Temperature 10 - 20 then print "Cold weather".
+•	Temperature 20 - 30 then print "Normal in temperature".
+•	Temperature 30 - 40 then print "Its hot".
+•	Temperature >= 40 then print "Its very hot".
+
+Input Format
+The input consists of the temperature.
+Output Format
+The output prints the weather condition.
+Refer sample output for formatting specifications.
+Sample InputSample Output
+-2
+Freezing weather
+Sample InputSample Output
+0
+Very cold weather
+Sample InputSample Output
+4
+Very cold weather
+Sample InputSample Output
+10
+Cold weather
+Sample InputSample Output
+20
+Normal in temperature
+Sample InputSample Output
+30
+Its hot
+Sample InputSample Output
+40
+Its very hot
+Sample InputSample Output
+48
+Its very hot
+
+
+
+package com.example.workout;
+import java.util.Scanner;
+
+public class Weather {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int temperature=sc.nextInt();
+		if(temperature<0)
+			System.out.println("Freezing weather");
+		else if(temperature>=0&&temperature<10)
+			System.out.println("Very cold weather");
+		else if(temperature>=10&&temperature<20)
+			System.out.println("Cold weather");
+		else if(temperature>=20&&temperature<30)
+			System.out.println("Normal in temperature");
+		else if(temperature>=30&&temperature<40)
+			System.out.println("Its hot");
+		else
+			System.out.println("Its very hot");
+
+	}
+
+}
