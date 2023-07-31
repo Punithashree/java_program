@@ -1,0 +1,22 @@
+int to float
+
+package training;
+
+
+public class A {
+	
+	public static void main(String[]args)
+	{
+		float b;
+		int a=5;
+		b=(float)a;
+		System.out.print("the decimal number:"+b);
+		
+		
+		
+	}
+	
+	
+	
+
+}
