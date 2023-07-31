@@ -1,0 +1,28 @@
+sum of array
+
+
+package training;
+
+import java.util.Scanner;
+
+public class arr_example {
+
+	public static void main(String[] args) {
+		int sum;
+		int count;
+		sum=0;
+		Scanner sc=new Scanner(System.in);
+		count=sc.nextInt();
+		int arr[]=new int[count];
+		for(int i=0;i<count;i++)
+		{
+			arr[i]=sc.nextInt();
+		}
+		sc.close();
+		for(int num:arr) {
+			sum=sum+num;
+		}
+		System.out.println(sum);
+	}
+
+}
