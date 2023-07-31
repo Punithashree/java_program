@@ -1,0 +1,38 @@
+Write a program to convert Celsius to Fahrenheit. The formula is as follows, F = 1.8 C + 32.
+Question Instructions:
+Create a driver class named Main.
+The solution code should be written inside the main method() of the Main class
+Input Format
+The input consists of Celsius (double value).
+Output Format
+The output prints Fahrenheit(double value).
+Constraints
+Read and print Double values only.
+
+Sample Input
+51
+Sample Output
+123.8
+Sample Input
+48
+Sample Output
+118.4
+
+
+package com.example.workout;
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		double celsius=sc.nextDouble();
+		double fahrenheit=0;
+		fahrenheit=1.8 * celsius + 32;
+		System.out.println("Fahrenheit= "+fahrenheit);
+		sc.close();
+		
+
+	}
+
+}
