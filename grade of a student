@@ -1,0 +1,50 @@
+Write a program to display the grade of a student. If the mark is > 85 then display 'A', if the mark is > 75 then display 'B', the mark is > 65 then display 'C' for others display 'D'.
+Note: Use if else statement.
+Input Format
+Input to get a value N.
+Output Format
+Display the respective grade as shown in the sample output.
+Print Invalid if N<0.
+Constraints
+N (integer type) >= 0.
+Sample InputSample Output
+67
+C
+Sample InputSample Output
+-50
+Invalid
+
+
+
+package training;
+import java.util.Scanner;
+public class decision2_1 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int mark=sc.nextInt();
+		if(mark>=85)
+		{
+			System.out.println("A");
+		}
+		else if(mark>=75)
+		{
+			System.out.println("B");
+		}
+		else if(mark>=65)
+		{
+			System.out.println("C");
+		}
+		else if(mark>=50)
+		{
+			System.out.println("Pass");
+		}
+		else
+		{
+			System.out.println("Fail");
+		}
+		sc.close();
+
+	}
+
+}
