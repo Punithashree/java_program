@@ -1,0 +1,58 @@
+Given an integer N as input, which represents the number of electricity units consumed.
+Calculate the total electricity bill according to the given conditions:
+•	For first 50 units $ 0.50/unit
+•	For next 100 units $ 0.75/unit
+•	For next 100 units $ 1.20/unit
+•	For unit above 250 $ 1.50/unit
+An additional surcharge of 20% is added to the bill.
+Input Format
+The input consists of an integer that represents the units consumed.
+Output Format
+The output prints the total charge.
+Round off the output to two decimal places.
+Sample InputSample Output
+225
+228.00
+Sample InputSample Output
+300
+354.00
+Sample InputSample Output
+150
+120.00
+
+
+package com.example.workout;
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class electricity_bill {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int unit=sc.nextInt();
+		double amount,surcharge,totalamt;
+		DecimalFormat d = new DecimalFormat("0.00");
+		if(unit<=50)
+		{
+			amount=unit*0.50;
+		}
+		else if(unit<=150)
+		{
+			amount=50*0.50+(unit-50)*0.75;
+		}
+		else if(unit<=250)
+		{
+			amount=50*0.50+100*0.75+(unit-150)*1.20;
+		}
+		else
+		{
+			amount=50*0.50+100*0.75+100*1.20+(unit-250)*1.50;
+		}
+		surcharge=amount*0.20;
+		totalamt=amount+surcharge;
+		System.out.println(totalamt);
+		sc.close();
+        
+	}
+
+}
